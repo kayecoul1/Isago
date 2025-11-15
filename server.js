@@ -122,6 +122,6 @@ app.get('/protected', requireAuth, (req, res) => {
 });
 
 // Start server
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Serveur lancé sur http://0.0.0.0:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Serveur lancé sur port ${PORT}`);
 });
